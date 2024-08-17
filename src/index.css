@@ -1,0 +1,44 @@
+*{
+  margin:0;
+  padding: 0;
+}
+/* body{
+  background-color:#43A88A ;
+} */
+
+
+.btn-primary{
+  background-color: rgb(8, 33, 160);
+  margin: 0 0.5rem  0.5rem 0;
+  padding:0 0.5rem  ;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 0.4rem;
+  border: none;
+  
+}
+.btn-p{
+  color:#fff;
+  background-color: rgb(64, 60, 108);
+}
+.btn-p:hover{
+  background-color: rgb(76, 37, 252);
+}
+.para{
+  line-height: 2rem;
+
+  font-size: 18px ;
+ 
+}
+/* .btn-primary{
+  border-radius: 1rem;
+  border: none;
+  
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  color:#fff;
+  background-color: rgb(23, 7, 197);
+} */
+/* .btn-mode:hover{
+  background-color: rgb(24, 149, 199);
+} */
