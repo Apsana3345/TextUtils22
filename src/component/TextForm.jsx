@@ -35,11 +35,11 @@ export default function TextForm(props) {
     props.showAlert("Text is inversed","success");
   };
   const handleCopyClick = () => {
-    var text=document.getElementById("myBox");
-    text.select();
+    // var text=document.getElementById("myBox");
+    // text.select();
     // .then(() => setCopied(true))
     // .catch((err) => console.error("failed to copy the text: " + err));
-    navigator.clipboard.writeText(text.value)
+    navigator.clipboard.writeText(text)
       document.getSelection().removeAllRanges();
       props.showAlert(" Copied to clipboard ","success");
   };
@@ -84,7 +84,7 @@ export default function TextForm(props) {
       <div className="container my-4">
         <h2>Your Text Summary</h2>
         <p className="para my-3">
-          {text.split(" ").filter((element)=>{return element.length!==0}).length}words
+          {text.split(/\s+/).filter((element)=>{return element.length!==0}).length}words
           <br /> {text.length} characters <br />
           {getCharactersCountWithoutSpace(text)} CharactersWithoutSpace
           <br />

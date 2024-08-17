@@ -42,3 +42,7 @@
 /* .btn-mode:hover{
   background-color: rgb(24, 149, 199);
 } */
+.accordion-button::after {
+ 
+  filter: invert(1);
+}
